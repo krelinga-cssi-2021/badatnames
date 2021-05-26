@@ -18,8 +18,9 @@ function cancel() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    handleAuth()
     renderNavBar(document.querySelector("#navBar"))
-    document.querySelector("#submit").addEventListener("click", submit)
-    document.querySelector("#cancel").addEventListener("click", cancel)
+    handleAuth(() => {
+        document.querySelector("#submit").addEventListener("click", submit)
+        document.querySelector("#cancel").addEventListener("click", cancel)
+    })
 })
