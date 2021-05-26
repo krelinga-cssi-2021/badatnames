@@ -25,6 +25,7 @@
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
+    <script src="auth.js"></script>
     <script src="navBar.js"></script>
     <script src="newPerson.js"></script>
   </head>
@@ -34,14 +35,14 @@
       <div class="field">
           <label class="label">Name</label>
           <div class="control">
-              <input class="input" type="text" placeholder="new person's name">
+              <input id="name" class="input" type="text" placeholder="new person's name">
           </div>
       </div>
 
       <div class="field">
           <label class="label">Image URL</label>
           <div class="control">
-              <input class="input" type="text" placeholder="http://...">
+              <input id="img-url" class="input" type="text" placeholder="http://...">
           </div>
       </div>
 
