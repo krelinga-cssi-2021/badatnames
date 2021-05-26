@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I'm Bad At Names....</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.6.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.6.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.6.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.6.2/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.6.2/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.6.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.6.2/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.6.2/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.6.2/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.6.2/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <script src="navBar.js"></script>
+    <script src="newPerson.js"></script>
+  </head>
+  <body>
+      <div id="navBar"></div>
+
+      <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+              <input class="input" type="text" placeholder="new person's name">
+          </div>
+      </div>
+
+      <div class="field">
+          <label class="label">Image URL</label>
+          <div class="control">
+              <input class="input" type="text" placeholder="http://...">
+          </div>
+      </div>
+
+      <div class="field is-grouped">
+          <div class="control">
+              <button id="submit" class="button is-link">Submit</button>
+          </div>
+          <div class="control">
+              <button id="cancel" class="button is-link is-light">Cancel</button>
+          </div>
+      </div>
+  </body>
+</html>
