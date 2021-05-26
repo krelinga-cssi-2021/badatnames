@@ -9,8 +9,7 @@ function signIn() {
 
             // The signed-in user info.
             var user = result.user;
-            //window.location = 'writeNote.html';
-            alert("signed in!")
+            window.location = 'people.html';
         }).catch((error) => {
             // Handle Errors here.
             var errorCode = error.code;
