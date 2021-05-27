@@ -1,6 +1,10 @@
 {
-  "rules": {
-    ".read": "now < 1624510800000",  // 2021-6-24
-    ".write": "now < 1624510800000",  // 2021-6-24
-  }
+    "rules": {
+        "users": {
+            "$uid": {
+                ".read": "$uid === auth.uid",
+                ".write": "$uid === auth.uid"
+            }
+        }
+    }
 }
